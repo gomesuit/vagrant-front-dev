@@ -36,3 +36,6 @@ nodebrew use v6.9.5
 sudo yum install -y bash-completion
 echo '[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && source /usr/share/bash-completion/bash_completion' >> ~/.bash_profile
 
+
+# git clone git@github.com:gomesuit/larning-frontend.git
+
