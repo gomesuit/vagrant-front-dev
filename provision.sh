@@ -22,8 +22,7 @@ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.s
 
 # setting vim
 #mkdir ~/.vim/indent
-#ln -s /vagrant/setting/ruby.vim ~/.vim/indent/ruby.vim
-#ln -s /vagrant/setting/vimrc ~/.vimrc
+ln -s /vagrant/setting/vimrc ~/.vimrc
 
 # install nodejs
 curl -L git.io/nodebrew | perl - setup
