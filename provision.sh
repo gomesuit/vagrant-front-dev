@@ -53,9 +53,9 @@ gem install sass
 # install nginx
 sudo yum install -y epel-release
 sudo yum install -y nginx
-systemctl enable nginx
-ln -sf /vagrant/settings/nginx.conf /etc/nginx/nginx.conf
-systemctl start nginx
+sudo systemctl enable nginx
+sudo ln -sf /vagrant/settings/nginx.conf /etc/nginx/nginx.conf
+sudo systemctl start nginx
 
 # git clone git@github.com:gomesuit/larning-frontend.git
 
