@@ -172,4 +172,6 @@ colorscheme desert
 " 行番号の色
 highlight LineNr ctermfg=darkyellow
 set backspace=indent,eol,start
+" インデント幅をスペース2つ分にする
+set shiftwidth=4
 
