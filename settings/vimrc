@@ -58,11 +58,13 @@ NeoBundle 'tpope/vim-fugitive'
 " coffee-script
 NeoBundle 'kchmck/vim-coffee-script'
 
-
 " ファイルオープンを便利に
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
+
+" 自動で閉じる
+NeoBundle 'tpope/vim-endwise'
 
 
 call neobundle#end()
@@ -85,6 +87,15 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 
+" --------------------------------
+" neocomplete.vim
+" --------------------------------
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
 
 
 " --------------------------------
