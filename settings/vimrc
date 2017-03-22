@@ -173,5 +173,5 @@ colorscheme desert
 highlight LineNr ctermfg=darkyellow
 set backspace=indent,eol,start
 " インデント幅をスペース2つ分にする
-set shiftwidth=4
+set shiftwidth=2
 
