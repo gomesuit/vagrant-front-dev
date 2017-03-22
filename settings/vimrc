@@ -22,7 +22,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tomasr/molokai'
 
 " インデントに色をつけてくれる
-NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'Yggdroot/indentLine'
 
 " 各行の行末に不要に入ってしまったスペースを色つけて表示する
 NeoBundle 'bronson/vim-trailing-whitespace'
