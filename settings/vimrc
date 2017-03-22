@@ -13,58 +13,46 @@ call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-
-
+" ディレクトリをツリー表示
+NeoBundle 'scrooloose/nerdtree'
 " Vimの画面の一番下にあるステータスラインの表示内容が強化される
 NeoBundle 'itchyny/lightline.vim'
-
-" HTMLやCSSのタグや属性を色付けする
-NeoBundle 'tomasr/molokai'
-
 " インデントに色をつけてくれる
 NeoBundle 'Yggdroot/indentLine'
-
 " 各行の行末に不要に入ってしまったスペースを色つけて表示する
 NeoBundle 'bronson/vim-trailing-whitespace'
-
 " 入力途中のコードを自動で補完する
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
-
-" コード補完の機能
-NeoBundle 'Shougo/neocomplete.vim'
-
-" HTML5のタグに色がつく
-NeoBundle 'othree/html5.vim'
-
-" CSS3の内容に色がつく
-NeoBundle 'hail2u/vim-css3-syntax'
-
-" JavaScriptのコードに色がつく
-NeoBundle 'jelera/vim-javascript-syntax'
-
-" HTML5の文法チェック
-NeoBundle 'hokaccha/vim-html5validator'
-
-" emmet
-NeoBundle 'mattn/emmet-vim'
-
-" sassやscssのファイルへの色づけ
-NeoBundle 'AtsushiM/sass-compile.vim'
-
-" Vimの中でGitのコマンドを実行
-NeoBundle 'tpope/vim-fugitive'
-
-" coffee-script
-NeoBundle 'kchmck/vim-coffee-script'
-
 " ファイルオープンを便利に
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
-
 " 自動で閉じる
 NeoBundle 'tpope/vim-endwise'
+" Vimの中でGitのコマンドを実行
+NeoBundle 'tpope/vim-fugitive'
+
+
+"" front
+" コード補完の機能
+NeoBundle 'Shougo/neocomplete.vim'
+" HTMLやCSSのタグや属性を色付けする
+NeoBundle 'tomasr/molokai'
+" HTML5のタグに色がつく
+NeoBundle 'othree/html5.vim'
+" CSS3の内容に色がつく
+NeoBundle 'hail2u/vim-css3-syntax'
+" JavaScriptのコードに色がつく
+NeoBundle 'jelera/vim-javascript-syntax'
+" HTML5の文法チェック
+NeoBundle 'hokaccha/vim-html5validator'
+" emmet
+NeoBundle 'mattn/emmet-vim'
+" sassやscssのファイルへの色づけ
+NeoBundle 'AtsushiM/sass-compile.vim'
+" coffee-script
+NeoBundle 'kchmck/vim-coffee-script'
 
 
 call neobundle#end()
@@ -72,6 +60,13 @@ filetype plugin indent on
 NeoBundleCheck
 
 
+""""""""""""""""""""""""""""""
+" NERDTree
+""""""""""""""""""""""""""""""
+let g:NERDTreeShowBookmarks=1
+autocmd VimEnter * NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " --------------------------------
 " unite.vim
