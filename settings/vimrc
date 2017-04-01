@@ -170,5 +170,5 @@ set backspace=indent,eol,start
 " インデント幅をスペース2つ分にする
 set shiftwidth=2
 " インデントによって自動で折りたたみ
-set foldmethod=indent
+#set foldmethod=indent
 
