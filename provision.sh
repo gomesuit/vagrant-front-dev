@@ -30,25 +30,28 @@ source ~/.bash_profile
 nodebrew install-binary v6.9.5
 nodebrew use v6.9.5
 
+# install gulp
+npm install -g gulp
+
 # install bash-completion
 sudo yum install -y bash-completion
 echo '[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && source /usr/share/bash-completion/bash_completion' >> ~/.bash_profile
 
 # install rbenv
-#sudo yum install -y git gcc bzip2 openssl-devel readline-devel zlib-devel
-#git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-#echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-#echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-#source ~/.bash_profile
-#git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+sudo yum install -y git gcc bzip2 openssl-devel readline-devel zlib-devel
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+source ~/.bash_profile
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 # install ruby
-#rbenv install 2.2.3
-#rbenv rehash
-#rbenv global 2.2.3
+rbenv install 2.3.3
+rbenv rehash
+rbenv global 2.3.3
 
 # install sass
-#gem install sass
+gem install sass
 
 # install nginx
 #sudo yum install -y epel-release
