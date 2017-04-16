@@ -46,7 +46,7 @@ source ~/.bash_profile
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 # install ruby
-rbenv install 2.3.3
+CONFIGURE_OPTS="--disable-install-rdoc" rbenv install 2.3.3
 rbenv rehash
 rbenv global 2.3.3
 
