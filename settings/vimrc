@@ -55,12 +55,18 @@ NeoBundle 'AtsushiM/search-parent.vim'
 NeoBundle 'AtsushiM/sass-compile.vim'
 " coffee-script
 NeoBundle 'kchmck/vim-coffee-script'
+" jsx syntax
+NeoBundle 'mxw/vim-jsx'
 
 
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 
+""""""""""""""""""""""""""""""
+" mxw/vim-jsx
+""""""""""""""""""""""""""""""
+let g:jsx_ext_required = 0
 
 """"""""""""""""""""""""""""""
 " sass-compile
